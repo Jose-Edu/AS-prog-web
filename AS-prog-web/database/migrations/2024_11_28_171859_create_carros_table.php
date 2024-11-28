@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('modelo');
             $table->integer('ano');
+            $table->foreignId('pessoa_id')->references('id')->on('pessoas')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -10,4 +10,9 @@ class Pessoa extends Model
         'nome',
         'idade'
     ];
+
+    public function carro()
+    {
+        $this->hasMany(Carro::class);
+    }
 }
