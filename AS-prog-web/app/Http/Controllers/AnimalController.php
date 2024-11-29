@@ -9,7 +9,7 @@ class AnimalController extends Controller
 {
     public function index()
 	{
-		$products = Animal::all();
+		$animals = Animal::all();
 		return view('animals.index', compact('animals'));
 	}
 

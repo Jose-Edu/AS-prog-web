@@ -27,7 +27,7 @@ class PedidoController extends Controller
 	public function edit($id)
 	{
 		$pedido = Pedido::findOrFail($id);
-		return view('pedidos.edit', compact('pedidos'));
+		return view('pedidos.edit', compact('pedido'));
 	}
 
 	public function update(Request $request, $id)

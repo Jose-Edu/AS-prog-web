@@ -50,6 +50,7 @@ class CarroController extends Controller
 		
         $carro->modelo = $request->modelo;
         $carro->ano = $request->ano;
+		$carro->pessoa_id = $request->pessoa_id;
         $carro->save();
 
 		return redirect('carros')->with('success', 'Carro updated successfully.');
