@@ -14,7 +14,7 @@ class Carro extends Model
 
     public function pessoa()
     {
-        $this->belongsTo(Pessoa::class);
+        return $this->belongsTo(Pessoa::class);
     }
 
 }

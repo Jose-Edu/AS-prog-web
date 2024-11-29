@@ -13,6 +13,6 @@ class Pessoa extends Model
 
     public function carro()
     {
-        $this->hasMany(Carro::class);
+        return $this->hasMany(Carro::class);
     }
 }
